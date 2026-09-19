@@ -94,7 +94,7 @@ class UnityEnvironment(BaseEnvironment):
         else:
             # Launch the executable
             self.port_number = self.base_port + port_id
-            self.comm = UnityCommunication(no_graphics=True, x_display="1", file_name = "./vh/vh_sim/simulation/unity_simulator/v2.2.5/linux_exec.v2.2.5_beta.x86_64", port=f"{self.port_number}")
+            self.comm = UnityCommunication(no_graphics=True, x_display="1", file_name = "./vh/vh_sim/simulation/unity_simulator/linux_exec.v2.3.0.x86_64", port=f"{self.port_number}")
 
 
 
@@ -109,7 +109,7 @@ class UnityEnvironment(BaseEnvironment):
     def relaunch(self):
         self.comm.close()
         self.comm = UnityCommunication(
-            no_graphics=True, x_display="1", file_name = "./vh/vh_sim/simulation/unity_simulator/v2.2.5/linux_exec.v2.2.5_beta.x86_64", port=f"{self.port_number}")
+            no_graphics=True, x_display="1", file_name = "./vh/vh_sim/simulation/unity_simulator/linux_exec.v2.3.0.x86_64", port=f"{self.port_number}")
 
 
 
@@ -420,7 +420,6 @@ class UnityEnvironment(BaseEnvironment):
             visible_graph = self.get_observation(agent_id, obs_type)
             dict_action_space[agent_id] = [node['id'] for node in visible_graph['nodes']]
         return dict_action_space
-
 
 
 

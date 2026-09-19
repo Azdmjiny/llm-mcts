@@ -342,7 +342,7 @@ def test():
     file_path = find_test_data_file_path(args)
     env_task_set = pickle.load(open(file_path, 'rb'))
     executable_args = {
-                    'file_name': "./vh/vh_sim/simulation/unity_simulator/v2.2.5/linux_exec.v2.2.5_beta.x86_64",
+                    'file_name': "./vh/vh_sim/simulation/unity_simulator/linux_exec.v2.3.0.x86_64",
                     'x_display': "1",
                     'no_graphics': True
     }

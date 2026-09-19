@@ -8,7 +8,7 @@ def get_args():
     parser = argparse.ArgumentParser(description='Pre-Trained Language Models for Interactive Decision-Making')
 
     ## Exec
-    parser.add_argument('--exec_file', type=str, default='./vh/vh_sim/simulation/unity_simulator/v2.2.5/linux_exec.v2.2.5_beta.x86_64')
+    parser.add_argument('--exec_file', type=str, default='./vh/vh_sim/simulation/unity_simulator/linux_exec.v2.3.0.x86_64')
     parser.add_argument('--base-port', type=int, default=8080)
     parser.add_argument('--graphics', action='store_true', default=False)
     parser.add_argument('--display', type=str, default="0")
